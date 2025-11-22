@@ -274,6 +274,46 @@
                     <p class="form-status" id="formStatus" aria-live="polite"></p>
                 </form>
             </div>
+                        <div>
+                <form class="contact-form" id="contactForm">
+                    <div class="field">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko">
+                    </div>
+                    <div class="field">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="np. jan.nowak@example.com">
+                    </div>
+                    <div class="field">
+                        <label for="type">Rodzaj usługi</label>
+                        <select id="type" name="type" required>
+                            <option value="">Wybierz opcję...</option>
+                            <option value="korepetycje-polski">Korepetycje – język polski</option>
+                            <option value="korepetycje-angielski">Korepetycje – język angielski</option>
+                            <option value="odwolanie-polski">Odwołanie – język polski</option>
+                            <option value="odwolanie-angielski">Odwołanie – język angielski</option>
+                            <option value="odwolanie-matematyka">Odwołanie – matematyka (podstawa)</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  placeholder="Opisz krótko swoją sytuację, wynik matury lub oczekiwania wobec korepetycji."></textarea>
+                    </div>
+                    <p class="form-note">
+                        Formularz jest przykładowy – podmień adres w JavaScript lub użyj własnego narzędzia (np. Formspree, Getform, itp.).
+                    </p>
+                    <button type="submit" class="btn btn-primary full-width">Wyślij wiadomość</button>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+
+                <!-- Nowy blok kontaktu telefonicznego -->
+                <p class="form-note" style="margin-top: 10px;">
+                    W pilnych sprawach możesz również zadzwonić:
+                    <a href="tel:+48555444666">555 444 666</a>
+                </p>
+            </div>
+
         </div>
     </section>
 </main>
