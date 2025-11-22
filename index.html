@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Korepetycje – Jan Kowalski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+      .box { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #ddd; padding: 32px; max-width: 480px; margin: auto; }
+      h1 { color: #2c3e50; }
+      label, input, textarea { display: block; width: 100%; margin-top: 8px; }
+      input, textarea { margin-bottom: 18px; padding: 12px; border: 1px solid #ccc; border-radius: 6px; }
+      button { background: #3498db; color: #fff; border: none; padding: 12px 26px; border-radius: 6px; cursor: pointer; }
+      button:hover { background: #217dbb; }
+    </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Korepetycje z matematyki i informatyki</h1>
+    <p>Oferuję skuteczne korepetycje online oraz stacjonarne w Toruniu.</p>
+    <ul>
+      <li>Matematyka (SP, LO, matura)</li>
+      <li>Informatyka, programowanie (Python, C++, web)</li>
+      <li>Pomoc w zadaniach i projektach</li>
+    </ul>
+    <h2>Kontakt</h2>
+    <form action="https://formspree.io/f/yourcode" method="POST">
+      <label for="name">Imię i nazwisko</label>
+      <input type="text" name="name" id="name" required>
+      <label for="email">Twój e-mail</label>
+      <input type="email" name="email" id="email" required>
+      <label for="message">Wiadomość</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </div>
+</body>
+</html>
