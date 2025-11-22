@@ -2,37 +2,288 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Korepetycje – Jan Kowalski</title>
+    <title>Korepetycje matura – język polski, angielski, odwołania | korepetycjematura.pl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
-      .box { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #ddd; padding: 32px; max-width: 480px; margin: auto; }
-      h1 { color: #2c3e50; }
-      label, input, textarea { display: block; width: 100%; margin-top: 8px; }
-      input, textarea { margin-bottom: 18px; padding: 12px; border: 1px solid #ccc; border-radius: 6px; }
-      button { background: #3498db; color: #fff; border: none; padding: 12px 26px; border-radius: 6px; cursor: pointer; }
-      button:hover { background: #217dbb; }
-    </style>
+    <meta name="description" content="Profesjonalne korepetycje online z języka polskiego i angielskiego (120 zł / 60 min) oraz odwołania od wyników matur z polskiego, angielskiego i matematyki.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="box">
-    <h1>Korepetycje z matematyki i informatyki</h1>
-    <p>Oferuję skuteczne korepetycje online oraz stacjonarne w Toruniu.</p>
-    <ul>
-      <li>Matematyka (SP, LO, matura)</li>
-      <li>Informatyka, programowanie (Python, C++, web)</li>
-      <li>Pomoc w zadaniach i projektach</li>
-    </ul>
-    <h2>Kontakt</h2>
-    <form action="https://formspree.io/f/yourcode" method="POST">
-      <label for="name">Imię i nazwisko</label>
-      <input type="text" name="name" id="name" required>
-      <label for="email">Twój e-mail</label>
-      <input type="email" name="email" id="email" required>
-      <label for="message">Wiadomość</label>
-      <textarea name="message" id="message" rows="4" required></textarea>
-      <button type="submit">Wyślij</button>
-    </form>
-  </div>
+<header class="site-header" id="top">
+    <div class="container header-inner">
+        <a href="#top" class="logo">
+            <span class="logo-mark">KM</span>
+            <span class="logo-text">korepetycjematura.pl</span>
+        </a>
+        <nav class="nav" id="nav">
+            <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li><a href="#oferta">Korepetycje</a></li>
+                <li><a href="#odwolania">Odwołania maturalne</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#opinie">Opinie</a></li>
+                <li><a href="#kontakt" class="nav-cta">Umów lekcję</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <p class="hero-tag">Profesjonalne przygotowanie do matury online</p>
+                <h1>Korepetycje z języka polskiego i angielskiego + odwołania od wyników matur</h1>
+                <p class="hero-subtitle">
+                    Skuteczne i nowoczesne lekcje 1:1 w formie online oraz kompleksowa pomoc przy odwołaniach od wyników matur
+                    z języka polskiego, angielskiego i matematyki.
+                </p>
+                <div class="hero-actions">
+                    <a href="#kontakt" class="btn btn-primary">Umów pierwszą lekcję</a>
+                    <a href="#odwolania" class="btn btn-outline">Sprawdź ofertę odwołań</a>
+                </div>
+                <div class="hero-meta">
+                    <span>120 zł / 60 min – polski i angielski</span>
+                    <span>300 zł – pełne odwołanie maturalne</span>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="hero-panel-card">
+                    <h2>Najważniejsze w liczbach</h2>
+                    <ul class="stats">
+                        <li><span class="stat-value">100%</span><span class="stat-label">zajęcia online</span></li>
+                        <li><span class="stat-value">120 zł</span><span class="stat-label">za 60 minut korepetycji</span></li>
+                        <li><span class="stat-value">300 zł</span><span class="stat-label">za kompletne odwołanie</span></li>
+                        <li><span class="stat-value">170 zł</span><span class="stat-label">za odwołanie z 1 części egzaminu</span></li>
+                    </ul>
+                    <p class="hero-note">
+                        Lekcje odbywają się wyłącznie online – wygodnie, bez dojazdów, z materiałami udostępnianymi po zajęciach.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA KOREPETYCJI -->
+    <section class="section" id="oferta">
+        <div class="container">
+            <header class="section-header">
+                <h2>Oferta korepetycji online</h2>
+                <p>Wysokiej jakości przygotowanie do matury z języka polskiego i angielskiego w formule 60-minutowych spotkań 1:1.</p>
+            </header>
+
+            <div class="grid grid-2">
+                <article class="card">
+                    <h3>Język polski – matura</h3>
+                    <p class="card-price">120 zł <span>/ 60 minut</span></p>
+                    <ul class="list">
+                        <li>poziom podstawowy i rozszerzony</li>
+                        <li>analiza arkuszy maturalnych CKE i OKE</li>
+                        <li>omówienie najczęstszych „pułapek” w zadaniach</li>
+                        <li>praca nad formami pisemnymi (wypracowania, rozprawki, interpretacje)</li>
+                        <li>powtórki z lektur obowiązkowych i uzupełniających</li>
+                    </ul>
+                    <p class="card-footnote">Zajęcia prowadzone wyłącznie online, z możliwością nagrywania lekcji po stronie ucznia.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Język angielski – matura</h3>
+                    <p class="card-price">120 zł <span>/ 60 minut</span></p>
+                    <ul class="list">
+                        <li>poziom podstawowy i rozszerzony</li>
+                        <li>przygotowanie do zadań ze słuchu, czytania i środków językowych</li>
+                        <li>trening wypowiedzi pisemnych (e-mail, rozprawka, recenzja, artykuł)</li>
+                        <li>konwersacje pod kątem matury ustnej</li>
+                        <li>powtórzenie kluczowych zagadnień gramatycznych</li>
+                    </ul>
+                    <p class="card-footnote">Lekcje na profesjonalnej platformie do wideokonferencji + materiały PDF po każdych zajęciach.</p>
+                </article>
+            </div>
+
+            <div class="info-banner">
+                <p>Wszystkie korepetycje odbywają się wyłącznie w formie online – wystarczy komputer lub tablet, kamera oraz stabilne łącze internetowe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODWOLANIA OD MATUR -->
+    <section class="section section-alt" id="odwolania">
+        <div class="container">
+            <header class="section-header">
+                <h2>Odwołania od wyników matur</h2>
+                <p>Profesjonalna analiza prac maturalnych i przygotowanie odwołań z języka polskiego, angielskiego oraz matematyki.</p>
+            </header>
+
+            <div class="grid grid-3">
+                <article class="card card-compact">
+                    <h3>Polski – podstawa i rozszerzenie</h3>
+                    <p class="card-price">300 zł <span>/ pełne odwołanie</span></p>
+                    <ul class="list">
+                        <li>szczegółowa analiza arkusza i kryteriów oceniania</li>
+                        <li>sprawdzenie punktacji krok po kroku</li>
+                        <li>przygotowanie kompletnego pisma odwoławczego</li>
+                    </ul>
+                    <div class="card-variant">
+                        <p><strong>Wariant częściowy:</strong></p>
+                        <p>170 zł – odwołanie dotyczące tylko jednej części (np. wyłącznie część pisemna lub bez części pisemnej, np. tylko ustna).</p>
+                    </div>
+                </article>
+
+                <article class="card card-compact">
+                    <h3>Angielski – podstawa i rozszerzenie</h3>
+                    <p class="card-price">300 zł <span>/ pełne odwołanie</span></p>
+                    <ul class="list">
+                        <li>analiza zadań zamkniętych i otwartych</li>
+                        <li>weryfikacja oceny wypowiedzi pisemnej</li>
+                        <li>przygotowanie argumentacji zgodnej z wymaganiami CKE</li>
+                    </ul>
+                    <div class="card-variant">
+                        <p><strong>Wariant częściowy:</strong></p>
+                        <p>170 zł – odwołanie tylko z jednej części egzaminu (np. sama część pisemna lub wyłącznie część ustna).</p>
+                    </div>
+                </article>
+
+                <article class="card card-compact">
+                    <h3>Matematyka – poziom podstawowy</h3>
+                    <p class="card-price">300 zł <span>/ pełne odwołanie</span></p>
+                    <ul class="list">
+                        <li>ponowne przeliczenie punktów zadań zamkniętych i otwartych</li>
+                        <li>sprawdzenie poprawności przyznania punktów cząstkowych</li>
+                        <li>opracowanie wniosku odwoławczego na podstawie oficjalnych wytycznych</li>
+                    </ul>
+                    <p class="card-footnote">W matematyce realizowane są wyłącznie odwołania z poziomu podstawowego.</p>
+                </article>
+            </div>
+
+            <div class="info-banner info-banner-accent">
+                <p>Aby przygotować odwołanie, potrzebny będzie skan pracy maturalnej, oficjalna punktacja z OKE oraz Twoje dane do wniosku.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O MNIE -->
+    <section class="section" id="o-mnie">
+        <div class="container grid grid-2">
+            <div>
+                <header class="section-header align-left">
+                    <h2>O prowadzącym</h2>
+                    <p>Indywidualne podejście, nacisk na zrozumienie, a nie wkuwanie schematów.</p>
+                </header>
+                <p>
+                    Od kilku lat przygotowuję uczniów do egzaminu maturalnego z języka polskiego i angielskiego, ze szczególnym
+                    naciskiem na logiczne rozumienie poleceń i kryteriów oceniania.
+                </p>
+                <p>
+                    W pracy łączę klasyczne metody nauczania z nowoczesnymi narzędziami: interaktywne prezentacje, współdzielone
+                    notatki, nagrania fragmentów lekcji oraz indywidualne plany powtórek.
+                </p>
+                <p>
+                    Przy odwołaniach maturalnych kluczowa jest precyzja – dokładna analiza kryteriów, poprawne odwołanie się do
+                    wytycznych CKE oraz rzeczowa, spokojna argumentacja.
+                </p>
+            </div>
+            <div class="about-panel">
+                <div class="about-card">
+                    <h3>Jak wyglądają zajęcia online?</h3>
+                    <ul class="list">
+                        <li>spotykamy się na platformie do wideorozmów (kamerka + udostępnianie ekranu)</li>
+                        <li>pracujemy na aktualnych arkuszach maturalnych i autorskich materiałach</li>
+                        <li>po każdej lekcji otrzymujesz materiały do samodzielnej powtórki</li>
+                        <li>ustalamy realny plan pracy do matury uwzględniający Twoje tempo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPINIE -->
+    <section class="section section-alt" id="opinie">
+        <div class="container">
+            <header class="section-header">
+                <h2>Opinie uczniów</h2>
+                <p>Poniżej przykładowe komentarze uczniów, którzy korzystali z korepetycji i/lub odwołań.</p>
+            </header>
+            <div class="grid grid-3">
+                <article class="card card-quote">
+                    <p class="quote">„Z polskiego byłam pewna, że będzie poprawka. Po kilku miesiącach pracy i odwołaniu wynik wzrósł o 14 punktów – ogromna ulga!”</p>
+                    <p class="quote-author">Marta, matura z języka polskiego</p>
+                </article>
+                <article class="card card-quote">
+                    <p class="quote">„Lekcje online z angielskiego są bardzo konkretne – zadania jak na maturze, dużo mówienia i jasne tłumaczenie gramatyki.”</p>
+                    <p class="quote-author">Kamil, matura z języka angielskiego</p>
+                </article>
+                <article class="card card-quote">
+                    <p class="quote">„Przy odwołaniu z matematyki wszystko zostało policzone jeszcze raz, krok po kroku – finalnie kilka dodatkowych punktów i zdana matura.”</p>
+                    <p class="quote-author">Aleksandra, matura z matematyki (podstawa)</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+        <div class="container grid grid-2">
+            <div>
+                <header class="section-header align-left">
+                    <h2>Kontakt i rezerwacja terminu</h2>
+                    <p>Napisz kilka słów o sobie, swoim wyniku / oczekiwaniach i proponowanych terminach zajęć.</p>
+                </header>
+                <p>
+                    W wiadomości napisz, czy interesują Cię korepetycje (polski / angielski), czy odwołanie od wyniku matury
+                    (jaki przedmiot, poziom oraz rok zdawania).
+                </p>
+                <p>
+                    Po otrzymaniu wiadomości odpowiem z propozycją terminu spotkania online oraz krótkim planem dalszych kroków.
+                </p>
+            </div>
+            <div>
+                <form class="contact-form" id="contactForm">
+                    <div class="field">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" id="name" name="name" required placeholder="Twoje imię i nazwisko">
+                    </div>
+                    <div class="field">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="np. jan.nowak@example.com">
+                    </div>
+                    <div class="field">
+                        <label for="type">Rodzaj usługi</label>
+                        <select id="type" name="type" required>
+                            <option value="">Wybierz opcję...</option>
+                            <option value="korepetycje-polski">Korepetycje – język polski</option>
+                            <option value="korepetycje-angielski">Korepetycje – język angielski</option>
+                            <option value="odwolanie-polski">Odwołanie – język polski</option>
+                            <option value="odwolanie-angielski">Odwołanie – język angielski</option>
+                            <option value="odwolanie-matematyka">Odwołanie – matematyka (podstawa)</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  placeholder="Opisz krótko swoją sytuację, wynik matury lub oczekiwania wobec korepetycji."></textarea>
+                    </div>
+                    <p class="form-note">
+                        Formularz jest przykładowy – podmień adres w JavaScript lub użyj własnego narzędzia (np. Formspree, Getform, itp.).
+                    </p>
+                    <button type="submit" class="btn btn-primary full-width">Wyślij wiadomość</button>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> korepetycjematura.pl – korepetycje online i odwołania od wyników matur.</p>
+        <p class="footer-meta">Cena korepetycji: 120 zł / 60 min. Odwołania: 300 zł pełne, 170 zł tylko jedna część egzaminu.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
