@@ -22,14 +22,39 @@ if (navToggle && navList) {
 }
 
 // Płynne przewijanie (dla starszych przeglądarek można dodać fallback)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href').substring(1);
-    const target = document.getElementById(targetId);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
+const header = document.querySelector('.site-header');
+const scrollLinks = document.querySelectorAll('[data-target]');
+
+scrollLinks.forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.dataset.target;
+
+    if (targetId === 'top') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
+      history.replaceState(null, '', window.location.pathname);
+      if (navList) navList.classList.remove('nav-open');
+      return;
     }
+
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    const headerOffset = header ? header.offsetHeight + 16 : 0;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: 'smooth'
+    });
+
+    history.replaceState(null, '', window.location.pathname);
+    if (navList) navList.classList.remove('nav-open');
   });
 });
 
