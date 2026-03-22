@@ -63,24 +63,8 @@ const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
 if (contactForm && formStatus) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
+  contactForm.addEventListener('submit', () => {
     formStatus.textContent = 'Wysyłanie wiadomości...';
     formStatus.classList.remove('form-status--success', 'form-status--error');
-
-    try {
-      // Tu podmień adres na swój endpoint (np. Formspree / własny backend)
-      // Na razie symulujemy powodzenie po 1 sekundzie:
-      await new Promise(resolve => setTimeout(resolve, 1000));
-
-      formStatus.textContent = 'Dziękuję! Twoja wiadomość została wysłana. Sprawdź skrzynkę e-mail w ciągu 24 godzin.';
-      formStatus.classList.add('form-status--success');
-      contactForm.reset();
-    } catch (err) {
-      console.error(err);
-      formStatus.textContent = 'Wystąpił błąd podczas wysyłania. Spróbuj ponownie później.';
-      formStatus.classList.add('form-status--error');
-    }
   });
 }
