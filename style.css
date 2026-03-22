@@ -635,10 +635,6 @@ body {
     grid-template-columns: minmax(0, 1.1fr);
   }
 
-  .hero-panel {
-    order: -1;
-  }
-
   .grid-2 {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -692,7 +688,7 @@ body {
   }
 
   .hero {
-    padding-top: 60px;
+    padding-top: 15px;
   }
 
   .hero-content h1 {
@@ -704,7 +700,7 @@ body {
   }
 
   .section {
-    padding: 64px 0;
+    padding: 20px 0;
   }
 
   .contact-extra {
