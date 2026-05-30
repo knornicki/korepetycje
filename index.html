@@ -403,25 +403,21 @@
         <p class="footer-meta">Cena korepetycji: 120 zł / 60 min. Odwołania: 350 zł pełne, 180 zł tylko jedna część egzaminu.</p>
         <p class="footer-meta">
         Telefon: 
-        <a href="tel:+48663202924" style="text-decoration: none; color: #9ca3af;">
-            663 202 924
+        <a class="contact-phone"
+           href="tel:+48663202924"
+           onclick="return gtag_report_conversion('tel:+48663202924');">
+           663 202 924
         </a>
         | Email: 
-        <a href="mailto:kontakt@korepetycjematura.pl" style="text-decoration: none; color: #9ca3af;">
-            kontakt@korepetycjematura.pl
+        <a href="mailto:kontakt@korepetycjematura.pl"
+           onclick="return gtag_report_conversion_email();">
+           kontakt@korepetycjematura.pl
         </a>
         </p>
     </div>
 </footer>
 
 <script src="script.js"></script>
-<script>
-function gtag_report_conversion() {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18151747969/APC0CJv1kLYcEIHjts9D'
-  });
-}
-</script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
@@ -432,6 +428,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+</script>
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18151747969/sGjMCOPbkbYcEIHjts9D',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+<script>
+function gtag_report_conversion_email() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18151747969/HxxkCOjjkbYcEIHjts9D'
+  });
+  return true;
+}
 </script>
 </body>
 </html>
