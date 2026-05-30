@@ -415,5 +415,23 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+function gtag_report_conversion() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18151747969/APC0CJv1kLYcEIHjts9D'
+  });
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+
+  if (form) {
+    form.addEventListener("submit", function () {
+      gtag_report_conversion();
+    });
+  }
+});
+</script>
 </body>
 </html>
