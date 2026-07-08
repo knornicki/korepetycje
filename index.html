@@ -8,15 +8,6 @@
     <meta name="description" content="Profesjonalne korepetycje online z języka polskiego i angielskiego (120 zł / 60 min) oraz odwołania od wyników matur z polskiego, angielskiego i matematyki.">
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18151747969"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18151747969');
-</script>
 <body>
 <header class="site-header">
     <div class="container header-inner">
@@ -62,7 +53,7 @@
             <div class="hero-meta">
                 <span>ponad 10 lat pracy z maturzystami</span>
                 <span>ponad 1000 zadowolonych uczniów i rodziców</span>
-                <span>zajęcia prowadzone m.in. przez egzaminatorów OKE</span>
+                <span>zajęcia prowadzone m.in. przez egzaminatorów CKE</span>
             </div>
         </div>
         <div class="hero-panel">
@@ -337,11 +328,26 @@
                 <p>Napisz kilka słów o sobie, swoim wyniku, oczekiwaniach oraz o proponowanych terminach zajęć.</p>
             </header>
             <p>
-                W wiadomości napisz, na jakim poziomie interesują Cię korepetycje. W przypadku odwołania od wyniku matury napisz o rok zdawania.
+                W wiadomości napisz, na jakim poziomie interesują Cię korepetycje. W przypadku odwołania od wyniku matury napisz rok zdawania.
             </p>
             <p>
                 Po otrzymaniu wiadomości odpowiemy z propozycją terminu spotkania online oraz krótkim planem dalszych kroków.
             </p>
+
+            <div class="info-banner info-banner-accent">
+                <p>
+                    Jeśli zdecydujesz się na odwołanie, po wglądzie do pracy maturalnej prześlij zdjęcia wszystkich stron
+                    arkusza na adres <a href="mailto:kontakt@korepetycjematura.pl">kontakt@korepetycjematura.pl</a> -
+                    na tej podstawie przygotujemy analizę oceny i treść odwołania.
+                </p>
+            </div>
+
+            <div class="info-banner info-banner-warning">
+                <p>
+                    <strong>Ważne (RODO):</strong> zdjęcia arkusza nie powinny zawierać danych osobowych (imienia i nazwiska,
+                    numeru PESEL ani innych danych identyfikujących) - przed wysłaniem prosimy o ich zasłonięcie lub zakrycie.
+                </p>
+            </div>
         </div>
         <div>
             <form
@@ -403,54 +409,17 @@
         <p class="footer-meta">Cena korepetycji: 120 zł / 60 min. Odwołania: 350 zł pełne, 180 zł tylko jedna część egzaminu.</p>
         <p class="footer-meta">
         Telefon: 
-        <a href="tel:+48663202924"
-           onclick="return gtag_report_conversion('tel:+48663202924');">
-           663 202 924
+        <a href="tel:+48663202924" style="text-decoration: none; color: #9ca3af;">
+            663 202 924
         </a>
         | Email: 
-        <a href="mailto:kontakt@korepetycjematura.pl"
-           onclick="return gtag_report_conversion_email();">
-           kontakt@korepetycjematura.pl
+        <a href="mailto:kontakt@korepetycjematura.pl" style="text-decoration: none; color: #9ca3af;">
+            kontakt@korepetycjematura.pl
         </a>
         </p>
     </div>
 </footer>
 
 <script src="script.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-
-  if (form) {
-    form.addEventListener("submit", function () {
-      gtag_report_conversion();
-    });
-  }
-});
-</script>
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18151747969/sGjMCOPbkbYcEIHjts9D',
-    'event_callback': callback
-  });
-
-  return false;
-}
-</script>
-<script>
-function gtag_report_conversion_email() {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18151747969/HxxkCOjjkbYcEIHjts9D'
-  });
-  return true;
-}
-</script>
 </body>
 </html>
